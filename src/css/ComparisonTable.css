@@ -1,0 +1,41 @@
+.comparison-table {
+    margin-top: 2rem;
+}
+
+.header {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    border: 1px solid #dee2e6;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.table th:first-child {
+    width: 40%;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.table tbody tr:hover {
+    background-color: #e9ecef;
+}

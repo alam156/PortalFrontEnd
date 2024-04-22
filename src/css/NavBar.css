@@ -1,0 +1,24 @@
+.dropdown-menu {
+    min-width: 50rem; /* You can adjust this value to set the desired width */
+    top: calc(100% + 20px); /* Adjusted to position below the navbar */
+    left: 50%; /* Changed to position relative to its parent */
+    transform: translateX(-50%); /* Center horizontally */
+    max-height: 80vh; /* Limit the height of the dropdown menu to 80% of the viewport height */
+    overflow-y: auto; /* Add scrollbars if the content exceeds the max-height */
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown-menu {
+        min-width: 30rem;
+    }
+}
+.dropdown-header:hover {
+    color: green !important;
+}
+ul.dropdown-menu {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+.small-text {
+    font-size: 0.8rem; /* or any other size you prefer */
+}

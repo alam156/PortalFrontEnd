@@ -1,0 +1,6 @@
+.jumbotron-dark {
+    background-image: url('../components/background_image.jpg'); /* replace with the path to your image */
+    background-size: cover; /* adjust the image to cover the entire Jumbotron */
+    background-position: center; /* center the image within the Jumbotron */
+    border-radius: 2rem; /* make the corners of the Jumbotron rounded */
+}

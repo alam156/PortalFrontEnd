@@ -1,0 +1,43 @@
+.btn-primary {
+    border-radius: 0;
+    font-size: 18px;
+    padding: 12px 24px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+}
+
+ul.list-unstyled {
+    padding-left: 0;
+}
+
+ul.list-unstyled li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.5;
+}

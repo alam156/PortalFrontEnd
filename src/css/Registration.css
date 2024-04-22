@@ -1,0 +1,15 @@
+.registration-container {
+    padding-top: 100px;
+}
+.error {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff4d4d;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

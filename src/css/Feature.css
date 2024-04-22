@@ -1,0 +1,39 @@
+.border-bottom {
+    border-bottom: 40px;
+}
+.add-space {
+    margin: 4px;
+}
+.bg-main {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: cadetblue;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.bg-crystal {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #e9ecef;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bg-elegant {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: beige;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}

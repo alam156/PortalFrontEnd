@@ -1,0 +1,23 @@
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.photo-wrapper {
+    width: calc(33.333% - 10px);
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+    .photo-wrapper {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-wrapper {
+        width: 100%;
+    }
+}
+

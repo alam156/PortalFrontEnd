@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Blog Post 1",
+    "width" : 1080,
+    "height" : 800,
+    "imageUrl": "./album/album_image_1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Blog Post 2",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget lacinia lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl eget nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget lacinia lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl eget nisl.",
+    "publicationDate": "2022-01-02",
+    "imageUrl": "./album/album_image_2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Blog Post 3",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget lacinia lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl eget nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget lacinia lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl eget nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget lacinia lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl eget nisl.",
+    "publicationDate": "2022-01-03",
+    "imageUrl": "./album/album_image_3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Blog Post 4",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget lacinia lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl eget nisl.",
+    "publicationDate": "2022-01-01",
+    "imageUrl": "./album/album_image_4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Blog Post 5",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget lacinia lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl eget nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget lacinia lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl eget nisl.",
+    "publicationDate": "2022-01-02",
+    "imageUrl": "./album/album_image_5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Blog Post 6",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget lacinia lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl eget nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget lacinia lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl eget nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget lacinia lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl eget nisl.",
+    "publicationDate": "2022-01-03",
+    "imageUrl": "./album/album_image_6.jpg"
+  }
+]

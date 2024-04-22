@@ -1,0 +1,30 @@
+.pricing-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card .card-title {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.pricing-card .card-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.pricing-card .list-group-item {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.pricing-card .list-group-item i {
+    color: #007bff;
+}
