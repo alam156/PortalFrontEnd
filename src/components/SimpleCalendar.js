@@ -10,6 +10,7 @@ import axios from "axios";
 import NavBar from "./Navbar";
 import backgroundImage from "./album/event_background.jpeg";
 import Chatbox from "./Chatbox";
+import Cookies from "js-cookie";
 
 
 
@@ -18,10 +19,17 @@ const localizer = momentLocalizer(moment);
 
 const SimpleCalendar = () => {
     const [events, setEvents] = useState([]);
+    const token = Cookies.get('token')
 
     const fetchData = useCallback(async () => {
         try {
-            const response = await axios.get(`http://localhost:8085/api/fetch-events`);
+            const response = await axios.get(`http://localhost:8085/api/fetch-events`,{
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                }
+            });
+
             console.log(response.data);
             const events = response.data;
             for (let i = 0; i < events.length; i++) {
@@ -70,7 +78,7 @@ const SimpleCalendar = () => {
             <br/>
 
             <div className="row justify-content-center">
-                <div className="col-md-2">
+                <div className="col-md-3">
                     <Link to="/add-event-form" className="btn btn-secondary">
                         Add Event To Calendar
                     </Link>

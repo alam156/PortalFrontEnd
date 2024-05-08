@@ -10,6 +10,7 @@ import Footer from "./Footer";
 import backgroundImage from "./album/event_background.jpeg";
 import moment from 'moment';
 import { useNavigate } from 'react-router-dom';
+import Cookies from "js-cookie";
 
 //import { API_URL } from '../utils/constants';
 
@@ -76,6 +77,7 @@ const FileHandler = (props) => {
     const handleOnSubmit = async (event) => {
         event.preventDefault();
         console.log("submit clicked");
+        const token = Cookies.get('token');
 
         try {
             //const { title, content, publishDate } = state;
@@ -93,7 +95,8 @@ const FileHandler = (props) => {
                         const response = await axios.post(
                             'http://localhost:8085/api/upload-event', formData, {
                                 headers: {
-                                    'Content-Type': 'multipart/form-data'
+                                    'Content-Type': 'multipart/form-data',
+                                    'Authorization': `Bearer ${token}`
                                 }
                             });
                         console.log(response.data);

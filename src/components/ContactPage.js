@@ -25,9 +25,8 @@ const ContactPage = () => {
                 justifyContent: 'center',
                 alignItems: 'center' }}>
                 <h2>Contact Page</h2>
-
-
             </div>
+            <br/>
             <div className="row">
                 <div className ="col-md-2">
 
@@ -79,6 +78,7 @@ const ContactPage = () => {
                             </Row>
                         </Container>
                     </div>
+                    <br/>
                 </div>
                 <BlackFooter/>
                 <Chatbox/>

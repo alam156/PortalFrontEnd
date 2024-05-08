@@ -14,7 +14,7 @@ const EventCard = ({ event }) => {
     const src = `http://127.0.0.1:8080/${image}`;
 
     return (
-        <Card className="mb-4">
+        <Card className="mb-4 ">
             <Card.Body>
                 <div className="text-center">
                     <Image src={src} onClick={handleShowModal} className="img-fluid mb-3" />

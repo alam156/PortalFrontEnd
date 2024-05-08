@@ -19,7 +19,9 @@ const Dashboard = () => {
             const response = await axios.get(`http://localhost:8085/api/users?offset=${Number(page)}`);
             const newUsers = response.data['content'];
             console.log(newUsers);
-            setUsers((prevUsers) => [...prevUsers, ...newUsers]);
+            if (newUsers.length > 0) {
+                setUsers((prevUsers) => [...prevUsers, ...newUsers]);
+            }
             setHasMore(newUsers.length > 0);
         } catch (error) {
             console.error(error);
@@ -74,9 +76,15 @@ const Dashboard = () => {
                     </tbody>
                 </table>
                 {hasMore && (
-                    <button className="btn btn-primary" onClick={handleLoadMore} disabled={loading}>
-                        {loading ? 'Loading...' : 'Load More'}
-                    </button>
+                    <div className="row justify-content-center">
+                        <div className="col-md-2">
+                            <button className="btn btn-secondary" onClick={handleLoadMore} disabled={loading}>
+                                {loading ? 'Loading...' : 'Load More'}
+                            </button>
+                        </div>
+
+                    </div>
+
                 )}
             </div>
             <BlackFooter/>

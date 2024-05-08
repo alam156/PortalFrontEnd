@@ -23,9 +23,9 @@
     border: 1px solid #dee2e6;
 }
 
-.table th {
-    background-color: #f8f9fa;
-    font-weight: bold;
+.comparison-table thead th {
+    background-color: rgba(0, 123, 255, 0.8); /* blue with 50% opacity */
+    color: white; /* make the text color white for contrast */
 }
 
 .table th:first-child {

@@ -6,11 +6,13 @@ import backgroundImage from "./album/event_background.jpeg";
 import BlackFooter from "./BlackFooter";
 import Chatbox from "./Chatbox";
 import Footer from "./Footer";
+import Cookies from "js-cookie";
 
 const AddCategory = () => {
     const [name, setName] = useState('');
     const [nameError, setNameError] = useState('');
     const [submitError, setSubmitError] = useState('');
+    const token = Cookies.get('token');
 
     const handleNameChange = (e) => {
         const value = e.target.value;
@@ -29,8 +31,13 @@ const AddCategory = () => {
             return;
         }
         try {
-            const response = await axios.post('http://localhost:8085/api/add-category', {
+            const response = await axios.post(`http://localhost:8085/api/add-category`, {
                 name
+            },{
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                }
             });
 
             console.log(response.data);

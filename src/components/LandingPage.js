@@ -11,6 +11,7 @@ import CarLogos from "./CarLogos";
 import Jumbotron from "./Jumbotron";
 import Chatbox from "./Chatbox";
 import backgroundImage from "./album/event_background.jpeg";
+import Steps from "./Steps";
 
 const LandingPage = () => {
     return (
@@ -52,8 +53,11 @@ No matter cloud or on-premise, we are committed to delivering the latest e-signa
 "
                     />
                 </div>
-                <div className="container grid-container">
-                    <h2 className="mt-4 mb-4"></h2>
+                <div className="container grid-container justify-content-center text-center">
+                    <h2 className="mt-4 mb-4" style={{ opacity: 0.8, color: 'green' }}>Steps</h2>
+                </div>
+                <div className='row mb-5 blue-background'>
+                    <Steps/>
                 </div>
                 <div className='row mb-5'>
                     <Jumbotron/>

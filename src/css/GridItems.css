@@ -36,3 +36,8 @@
     color: #6c757d;
     flex-grow: 1;
 }
+
+.border-top-green {
+    border-top: 10px solid #28a745; /* Green border */
+    padding-top: 20px; /* Add some padding to the top of the grid item */
+}

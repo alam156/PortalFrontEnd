@@ -3,12 +3,19 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '../css/NavBar.css'
+import Logo from  './album/logo.png'
+
 
 const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
-                <Link className="navbar-brand" to="/">Your Logo</Link>
+                <Link className="navbar-brand" to="/"><img
+                    src={Logo}
+                    alt=""
+                    className="img-fluid"
+                    style={{ width: '50px', height: '35px' }}
+                /></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -66,8 +73,8 @@ const Navbar = () => {
                                                 <i className="bi bi-chevron-down ms-2"></i>
                                             </h2>
                                             <hr className="dropdown-divider" />
-                                            <li className="small-text"><Link className="dropdown-item" to="/service3">Quick tour</Link></li>
-                                            <li className="small-text"><Link className="dropdown-item" to="/service4">Video Tutorial</Link></li>
+                                            <li className="small-text"><Link className="dropdown-item" to="/portfolio">Quick tour</Link></li>
+                                            <li className="small-text"><Link className="dropdown-item" to="/quick-tour">Our Services</Link></li>
                                             <li className="small-text"><Link className="dropdown-item" to="/service3">What are Electronic signature?</Link></li>
                                             <li className="small-text"><Link className="dropdown-item" to="/service4">What are digital Signature?</Link></li>
                                         </div>
@@ -77,7 +84,7 @@ const Navbar = () => {
                                                 <i className="bi bi-chevron-down ms-2"></i>
                                             </h2>
                                             <hr className="dropdown-divider" />
-                                            <li className="small-text"><Link className="dropdown-item" to="/service5">Key Pair Generation</Link></li>
+                                            <li className="small-text"><Link className="dropdown-item" to="/key-pair-generation">Key Pair Generation</Link></li>
                                             <li className="small-text"><Link className="dropdown-item" to="/service6">Certificate Creation</Link></li>
                                             <li className="small-text"><Link className="dropdown-item" to="/service5">Signing with Esign</Link></li>
                                         </div>
@@ -138,7 +145,8 @@ const Navbar = () => {
                                             <hr className="dropdown-divider" />
                                             <li className="small-text"><Link className="dropdown-item " to="/service-news">Latest News</Link></li>
                                             <li className="small-text"><Link className="dropdown-item " to="/news">All news</Link></li>
-                                            <li className="small-text"><Link className="dropdown-item" to="/service2">Other</Link></li>
+                                            <li className="small-text"><Link className="dropdown-item" to="/faq">FAQ</Link></li>
+                                            {/*<li className="small-text"><Link className="dropdown-item" to="/questions">Questions</Link></li>*/}
                                         </div>
                                     </div>
                                 </div>
@@ -148,6 +156,8 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/registration">Registration</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/login">Login</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/logout">Logout Refresh</Link></li>
                     </ul>
                 </div>
             </div>

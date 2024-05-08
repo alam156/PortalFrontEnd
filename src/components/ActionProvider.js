@@ -48,7 +48,7 @@ class ActionProvider {
 
     handleContact = () => {
         const message = this.createChatBotMessage(
-            "Call 1999 for Trilingual Health Assistance.",
+            "Call ext(105) for getting more information.",
             {
                 widget: "emergencyContact",
                 loading: true,
@@ -76,12 +76,12 @@ class ActionProvider {
 
     handleJoke = () => {
         var jokes = [
-            "So many coronavirus jokes out there, it’s a pundemic!",
-            "I’ll tell you a coronavirus joke now, but you’ll have to wait two weeks to see if you got it!",
-            "Did you hear the joke about coronavirus? Never mind, I don’t want to spread it around!",
-            "What should you do if you don’t understand a coronavirus joke? Be patient!",
-            "Why do they call it the novel coronavirus? It’s a long story...",
-            "Since we’re all in quarantine I guess we’ll be making only inside jokes from now on!"
+            "Electronic signatures, or e-signatures, provide a convenient and secure way to sign documents digitally, eliminating the need for physical signatures.",
+            "E-signatures are legally binding in many countries and industries, making them a reliable alternative to traditional ink signatures.",
+            "Implementing e-signatures can help businesses streamline their workflows, reduce costs, and improve customer satisfaction by providing a faster and more efficient signing process.",
+            "E-signature solutions often include features such as audit trails, authentication, and encryption to ensure the integrity and security of signed documents.",
+            "E-signatures also offer environmental benefits by reducing paper waste and contributing to sustainability efforts.",
+            "With the increasing popularity of remote work and digital transactions, e-signatures have become an essential tool for businesses looking to stay competitive and agile in today's fast-paced digital landscape."
         ];
 
         var randomJoke = jokes[Math.floor(Math.random() * jokes.length)];

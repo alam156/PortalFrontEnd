@@ -4,11 +4,11 @@ import Link from "./Link";
 
 const DeliveryLink = () => {
     const getUrl = () => {
-        return `https://www.hpb.health.gov.lk/en/covid-19#:~:text=Delivery%20of%20medicine%20from%20hospital%20clinics`;
+        return `https://bcc.gov.bd`;
     };
 
     return (
-        <Link url={getUrl()} title={"delivery of medicine from hospital clinics"} />
+        <Link url={getUrl()} title={"the website of Bangladesh Computer Council"} />
     );
 };
 

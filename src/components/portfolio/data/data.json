@@ -1,0 +1,185 @@
+{
+  "Header": {
+    "title": "Quicksign Landing Page",
+    "paragraph": "Quicksign streamlines document signing processes with its secure, user-friendly, and efficient remote digital signing platform."
+  },
+  "About": {
+    "paragraph": "why you should use remote digital signature?",
+    "Why": [
+      "Optimum price",
+      "android app for registration",
+      "Secure signing",
+      "Remote private key handle",
+      "Simple"
+    ],
+    "Why2": [
+      "No Crypto Token needed",
+      "100 % Authenticity",
+      "Robust UI",
+      "Easy to use"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-wordpress",
+      "name": "Registration through e-KYC",
+      "text": "We need to register through e-KYC app through face recognition."
+    },
+    {
+      "icon": "fa fa-cart-arrow-down",
+      "name": "Access Through Web Application",
+      "text": "We need to access to web application to sign a document."
+    },
+    {
+      "icon": "fa fa-cloud-download",
+      "name": "Upload Document and Sign",
+      "text": "We need to upload the document to sign in web application."
+    },
+    {
+      "icon": "fa fa-language",
+      "name": "Select the PlaceHolder",
+      "text": "We need to select the place holder where to sign."
+    },
+    {
+      "icon": "fa fa-plane",
+      "name": "Select Approval Hierarchy",
+      "text": "Select Approval Hierarchy of members who needs to sign."
+    },
+    {
+      "icon": "fa fa-pie-chart",
+      "name": "Ensuring 2 factor authentication and sign",
+      "text": "We need to ensure 2 factor authentication and sign accordingly."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Very good signing system i have ever used.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Super user friendly.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Very economical pricing policy.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Good System.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Secured and reliable system.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Excellent, Swift, Secured system. One polite recommendation to make faster.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": {
+    "address": "4321 California St, San Francisco, CA 12345 ",
+    "phone": "+1 123 456 1234",
+    "email": "info@company.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Secure Authentication",
+      "text": "Digital signatures use strong encryption techniques to verify the identity of signatories and ensure that only authorized users can sign documents."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Audit Trails",
+      "text": "Each document signed digitally includes a comprehensive audit trail that records who signed the document, when they signed it, and the IP address from which it was signed, helping maintain compliance and traceability."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Time Stamping",
+      "text": "Digital signatures often incorporate time stamps that provide a verifiable date and time at which the signature was applied, ensuring the integrity and temporal validity of the document."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Non-repudiation",
+      "text": "Due to the unique identification features and encryption associated with digital signatures, signees cannot deny their association with a signed document, providing strong legal enforceability."
+    }
+  ]
+}

@@ -18,12 +18,12 @@ const GeneralOptions = (props) => {
             id: 3
         },
         {
-            name: "Clinical medicine delivery",
+            name: "Site of BCC",
             handler: props.actionProvider.handleMedicine,
             id: 4
         },
         {
-            name: "Listen Some Joke",
+            name: "Listen Some keypoints about QuickSign",
             handler: props.actionProvider.handleJoke,
             id: 4
         }

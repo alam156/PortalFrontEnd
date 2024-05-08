@@ -7,6 +7,18 @@
     overflow-y: auto; /* Add scrollbars if the content exceeds the max-height */
 }
 
+@media (max-width: 900px) {
+    .dropdown-menu {
+        position: absolute;
+        width: 100%;
+        max-width: none;
+        left: 0;
+        right: 0;
+        margin: 0;
+        transform: translateX(0);
+    }
+}
+
 @media screen and (max-width: 768px) {
     .dropdown-menu {
         min-width: 30rem;

@@ -11,12 +11,14 @@ import axios from "axios";
 import {useNavigate} from "react-router-dom";
 import backgroundImage from "./album/event_background.jpeg";
 import Chatbox from "./Chatbox";
+import Cookies from "js-cookie";
 
 const AddEventInCalendarForm = () => {
     const [eventName, setEventName] = useState('');
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
     const navigate = useNavigate();
+    const token = Cookies.get('token')
 
     const handleEventName = (e) => {
         const value = e.target.value;
@@ -36,13 +38,17 @@ const AddEventInCalendarForm = () => {
             const startDateString = startDate.toLocaleString('en-US', { month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true });
             const endDateString = endDate.toLocaleString('en-US', { month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true });
             console.log(startDateString);
-
-
-            const response = await axios.post('http://localhost:8085/api/add-event', {
+            const response = await axios.post(`http://localhost:8085/api/add-event`, {
                 eventName,
                 startDate,
                 endDate
+            } ,{
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                }
             });
+
 
             console.log(response.data);
             navigate('/calendar');

@@ -10,7 +10,9 @@ import Footer from "./Footer";
 import backgroundImage from "./album/event_background.jpeg";
 import moment from 'moment';
 import { useNavigate } from 'react-router-dom';
+import Cookies from 'js-cookie';
 import "../css/AddPhoto.css";
+
 
 //import { API_URL } from '../utils/constants';
 
@@ -35,6 +37,7 @@ const AddPhoto = (props) => {
 
     useEffect(() => {
         async function fetchData() {
+            const token = Cookies.get('token');
             // Fetch data
             const { data } = await axios.get("http://localhost:8085/api/fetch-category-list");
             const results = []
@@ -96,6 +99,7 @@ const AddPhoto = (props) => {
     const handleOnSubmit = async (event) => {
         event.preventDefault();
         console.log("submit clicked");
+        const token = Cookies.get('token');
 
         try {
             //const { title, content, publishDate } = state;
@@ -112,7 +116,8 @@ const AddPhoto = (props) => {
                         const response = await axios.post(
                             'http://localhost:8085/api/upload-photo', formData, {
                                 headers: {
-                                    'Content-Type': 'multipart/form-data'
+                                    'Content-Type': 'multipart/form-data',
+                                    'Authorization': `Bearer ${token}`
                                 }
                             });
                         console.log(response.data);
@@ -121,7 +126,7 @@ const AddPhoto = (props) => {
                     }
                     //navigate('/events');
 
-                    //navigate("/events");
+                    navigate("/photos");
 
                     props.history.push('/list');
                 } else {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import EventCard from './EventCard';
 import NavBar from "./Navbar";
@@ -7,6 +7,8 @@ import Footer from "./Footer";
 import backgroundImage from "./album/event_background.jpeg";
 import Chatbox from "./Chatbox";
 import axios from "axios";
+import {Link} from "react-router-dom";
+import Cookies from 'js-cookie';
 
 
 /*const events = [
@@ -48,12 +50,33 @@ import axios from "axios";
     }
 ];*/
 
-const response = await axios.get('http://localhost:8085/api/fetch-event-list');
-const events = response.data;
-console.log(events);
+
+
 //const events = [];
 
 const EventGrid = () => {
+    const [events, setEvents] = useState([]);
+    const isTokenPresent = Cookies.get('token');
+    const fetchEvents = useCallback(async () => {
+        try {
+            const response = await axios.get(`http://localhost:8085/api/fetch-event-list`,{
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${isTokenPresent}`
+                }
+            });
+
+            setEvents(response.data);
+        } catch (error) {
+            console.error(error);
+        } finally {
+
+        }
+    }, []);
+
+    useEffect(() => {
+        fetchEvents();
+    }, [fetchEvents]);
     return (
         <div>
             <div className="navbar-fixed"> <NavBar />
@@ -75,6 +98,16 @@ const EventGrid = () => {
                     <br/>
                     <br/>
                 </div>
+                {isTokenPresent && (
+                    <div className="row justify-content-center">
+                        <div className="col-md-2">
+                            <Link to="/upload-event" className="btn btn-secondary">
+                                Add Event
+                            </Link>
+                        </div>
+                    </div>
+                )}
+
                 <Container>
                     <Row>
                         {events.map((event, index) => (

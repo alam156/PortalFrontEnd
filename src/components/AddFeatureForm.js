@@ -8,11 +8,13 @@ import BlackFooter from './BlackFooter';
 import Footer from './Footer';
 import backgroundImage from "./album/event_background.jpeg";
 import Chatbox from "./Chatbox";
+import Cookies from "js-cookie";
 
 const AddFeatureForm = () => {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
     const navigate = useNavigate();
+    const token = Cookies.get('token')
 
     const handleFeatureTitleChange = (e) => {
         const value = e.target.value;
@@ -26,9 +28,15 @@ const AddFeatureForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8085/api/add-feature', {
+
+            const response = await axios.post(`http://localhost:8085/api/add-feature`, {
                 title,
                 content
+            } ,{
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                }
             });
 
             console.log(response.data);

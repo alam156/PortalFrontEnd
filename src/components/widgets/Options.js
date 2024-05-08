@@ -5,12 +5,17 @@ const Options = (props) => {
             <div className="options-container">
                 {props.options.map((option) => {
                     return (
-                        <div
-                            className="option-item"
-                            onClick={option.handler}
-                            key={option.id}
-                        >
-                            {option.name}
+                        <div>
+                            <div
+                                className="option-item bg-secondary"
+                                onClick={option.handler}
+                                key={option.id}
+                            >
+                                {option.name}
+                            </div>
+                            <div>
+                                <br/>
+                            </div>
                         </div>
                     );
                 })}

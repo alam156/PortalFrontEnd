@@ -22,6 +22,16 @@ import PricingPage from "./components/PricingPage";
 import FileHandler from "./components/FileHandler";
 import AddCategory from "./components/AddCategory";
 import AddPhoto from "./components/AddPhoto";
+import FAQ from "./components/FAQ";
+import Steps from "./components/Steps";
+import Questionnaire from "./components/Questionnaire";
+import CostDashBoard from "./components/CostDashBoard";
+import LoginPage from "./components/LoginPage";
+import LogoutPage from "./components/LogoutPage";
+import ChangePasswordPage from "./components/ChangePasswordPage";
+import QuickTour from "./components/quicktour/QuickTour";
+import Portfolio from "./components/portfolio/Portfolio";
+import KeyPairGenerationPage from "./components/KeyPairGenerationPage";
 
 const pageSize = 9;
 const apiKey = '90d07a0194994afb81b25f2807eb4937' ;
@@ -48,6 +58,15 @@ return (
             <Route path = "/add-category" element={<AddCategory/>}></Route>
             <Route path = "/upload-photo" element={<AddPhoto/>}></Route>
             <Route path = "/file-upload" element={<FileHandler/>}></Route>
+            <Route path = "/faq" element={<FAQ/>}></Route>
+            <Route path = "/login" element={<LoginPage/>}></Route>
+            <Route path = "/logout" element={<LogoutPage/>}></Route>
+            <Route path = "/change-password" element={<ChangePasswordPage/>}></Route>
+            <Route path = "/questions" element={<Questionnaire/>}></Route>
+            <Route path = "/cost" element={<CostDashBoard/>}></Route>
+            <Route path="/quick-tour" element={<QuickTour/>}></Route>
+            <Route path = "/portfolio" element={<Portfolio/>}></Route>
+            <Route path = "/key-pair-generation" element={<KeyPairGenerationPage/>}></Route>
             <Route path="/news" element={<News apiKey={apiKey} key="general" country='in' category='general' pageSize={pageSize} />} />
             <Route path="/business" element={<News apiKey={apiKey} key="business" country='in' category='business' pageSize={pageSize} />} />
             <Route path="/entertainment" element={<News apiKey={apiKey} key="entertainment" country='in' category='entertainment' pageSize={pageSize} />} />

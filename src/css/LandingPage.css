@@ -57,3 +57,7 @@ text-align: center;
 margin-top: 40px;
 color: #666;
 }
+.blue-background {
+    background-color: deepskyblue;
+    opacity: 0.9
+}
