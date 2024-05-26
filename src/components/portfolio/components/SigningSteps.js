@@ -1,11 +1,11 @@
 import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
-import Image1 from '../portfolio/image/service_image_1.jpeg';
-import Image2 from '../portfolio/image/service_image_2.jpeg';
-import Image3 from '../portfolio/image/service_image_3.jpeg';
-import Image4 from '../portfolio/image/service_image_4.jpeg';
+import Image1 from '../image/service_image_1.jpeg';
+import Image2 from '../image/service_image_2.jpeg';
+import Image3 from '../image/service_image_3.jpeg';
+import Image4 from '../image/service_image_4.jpeg';
 
-const ExclusiveServices = () => (
+const SigningSteps = () => (
     <Container>
         <Row>
             <Col md={12}>
@@ -18,17 +18,17 @@ const ExclusiveServices = () => (
                         />
                     </Col>
                     <Col md={6}>
-                        <h3>Authentication</h3>
+                        <h3>Registration</h3>
                         <p>
-                            One of the primary features of a digital signature is its ability to authenticate the identity of the signer. This is achieved through the use of public key infrastructure (PKI), which involves the creation of a pair of keys - a public key and a private key. The signer uses their private key to sign the document, and the recipient can use the corresponding public key to verify the signature. This ensures that the document has not been tampered with and that it truly came from the person who claims to have signed it.
+                            Enter your personal information to create an account.
                         </p>
                     </Col>
                 </Row>
                 <Row>
                     <Col md={6}>
-                        <h3>Non-Repudation</h3>
+                        <h3>Quick Enroll</h3>
                         <p>
-                            Another important feature of digital signatures is non-repudiation. This means that once a document has been signed, the signer cannot deny having signed it. This is because the digital signature is unique to the signer and cannot be forged or duplicated. This provides a high level of legal protection and can be used to prove the authenticity of a document in a court of law.
+                            Choose the courses you want to enroll in.
                         </p>
                     </Col>
                     <Col md={6}>
@@ -49,9 +49,9 @@ const ExclusiveServices = () => (
                         />
                     </Col>
                     <Col md={6}>
-                        <h3>Integrity</h3>
+                        <h3>Quick Pair</h3>
                         <p>
-                            Digital signatures also provide a way to ensure the integrity of a document. This means that the document has not been altered or tampered with since it was signed. This is achieved through the use of a hash function, which creates a unique digital fingerprint of the document. When the document is signed, the hash value is included in the signature. If the document is altered in any way, the hash value will change, and the signature will no longer be valid.
+                            Generate a key pair to secure your account.
                         </p>
                     </Col>
                 </Row>
@@ -76,4 +76,4 @@ const ExclusiveServices = () => (
         </Row>
 
     </Container>);
-export default ExclusiveServices;
+export default SigningSteps;

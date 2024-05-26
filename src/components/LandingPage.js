@@ -1,4 +1,6 @@
 import React from 'react';
+import {useState, useEffect} from "react";
+import {Button, Spinner} from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import '../css/LandingPage.css';
 import NavBar from '../components/Navbar.js';
@@ -14,6 +16,16 @@ import backgroundImage from "./album/event_background.jpeg";
 import Steps from "./Steps";
 
 const LandingPage = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 3000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <div>
             <div className="navbar-fixed">

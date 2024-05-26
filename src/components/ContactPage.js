@@ -37,7 +37,7 @@ const ContactPage = () => {
                             <Row className="no-gutters">
                                 <Col md={6} className="bg-info d-flex align-items-center">
                                     <div className="text-center text-white p-5">
-                                        <h1 className="display-4 mb-3">Contact Me</h1>
+                                        <h1 className="display-4 mb-3">Questions?</h1>
                                         <p className="lead mb-5">I'd love to hear from you! Fill out the form below to get in touch.</p>
                                         <Card className="bg-light border-0">
                                             <Card.Body>
@@ -54,6 +54,7 @@ const ContactPage = () => {
                                                         <Form.Label>Message</Form.Label>
                                                         <Form.Control as="textarea" rows={3} placeholder="Enter your message" required />
                                                     </Form.Group>
+                                                    <br/>
                                                     <Button variant="light" type="submit" className="btn-block bg-primary">
                                                         Send Message
                                                     </Button>
@@ -63,17 +64,22 @@ const ContactPage = () => {
                                     </div>
                                 </Col>
                                 <Col md={6} className="p-5">
-                                    <h2 className="display-5 mb-4">About Us</h2>
-                                    <p className="lead mb-4">We are a web developer with a passion for creating beautiful and functional websites. I specialize in building responsive, user-friendly interfaces using modern web technologies.</p>
-                                    <p className="mb-4">When we are not coding, you can find me hiking, reading, or experimenting with new recipes in the kitchen.</p>
-                                    <h3 className="mb-4">Skills</h3>
-                                    <ul className="list-unstyled">
-                                        <li>HTML/CSS</li>
-                                        <li>JavaScript/TypeScript</li>
-                                        <li>React</li>
-                                        <li>Node.js/Express</li>
-                                        <li>MongoDB/PostgreSQL</li>
-                                    </ul>
+                                    <h2 className="display-5 mb-4">Contact Persons</h2>
+                                    <h3>Engineer Firoz Alam</h3>
+                                    <h4>Engineer(Layer 2 Service)</h4>
+                                    <p className="lead mb-4"><p><b>Contact No: </b> +88-01816853910</p></p>
+                                    <br/>
+                                    <br/>
+                                    <h3 className="mb-4">Muhammad Masudur Rahman</h3>
+                                    <h4>Assistant Programmer</h4>
+                                    <p className="lead mb-4"><p><b>Contact No: </b>01711486209</p></p>
+                                    {/*<ul className="list-unstyled">*/}
+                                    {/*    <li>HTML/CSS</li>*/}
+                                    {/*    <li>JavaScript/TypeScript</li>*/}
+                                    {/*    <li>React</li>*/}
+                                    {/*    <li>Node.js/Express</li>*/}
+                                    {/*    <li>MongoDB/PostgreSQL</li>*/}
+                                    {/*</ul>*/}
                                 </Col>
                             </Row>
                         </Container>

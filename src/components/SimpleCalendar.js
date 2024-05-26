@@ -69,7 +69,10 @@ const SimpleCalendar = () => {
                         startAccessor="start"
                         endAccessor="end"
                         style={{ height: '80vh' }}
+                        showMultiDayTimes
+                        step={60}
                         popup
+                        dayLayoutAlgorithm='no-overlap'
                     />
                 </div>
 

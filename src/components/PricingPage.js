@@ -70,7 +70,7 @@ const PricingPage = () => {
             <div className="container mt-5">
                 <Row>
                     {plans.map((plan, index) => (
-                        <Col sm="4" key={index}>
+                        <Col sm="3" key={index}>
                             <PricingCard {...plan} />
                         </Col>
                     ))}

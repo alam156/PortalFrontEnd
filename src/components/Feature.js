@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import "../css/Feature.css";
 import NavBar from "./Navbar";
 import BlackFooter from "./BlackFooter";
@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import Cookies from "js-cookie";
 import backgroundImage from "./album/event_background.jpeg";
+import featureImage from "../components/album/feature_image.jpeg";
 
 const InfiniteGrid = () => {
     const [items, setItems] = useState([]);
@@ -58,7 +59,28 @@ const InfiniteGrid = () => {
                     <br/>
                     <br/>
                 </div>
-                <Row className="add-space">
+                <Row xs={1} md={2} className="g-4">
+                    {items.map((item, index) => (
+                        <Col key={index}>
+                            <Card>
+                                <Card.Img variant="top" src={featureImage} className="img-fluid" />
+                                <Card.Body>
+                                    <Card.Title>
+                                        <h2 className="bg-crystal">{item.title}</h2>
+                                    </Card.Title>
+                                    <Card.Text>
+                                        <div
+                                            className="bg-elegant"
+                                            dangerouslySetInnerHTML={{ __html: item.content }}
+                                        />
+
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    ))}
+                </Row>
+                {/*<Row className="add-space">
                     {items.map((item, index) => (
                         <Col key={index} xs={6} md={6}>
                             <div className="grid-item bg-main mb-5 border-bottom border-top-white">
@@ -71,7 +93,7 @@ const InfiniteGrid = () => {
                             </div>
                         </Col>
                     ))}
-                </Row>
+                </Row>*/}
             </Container>
             <BlackFooter />
             <Footer />

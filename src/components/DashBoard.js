@@ -7,16 +7,24 @@ import Footer from "./Footer";
 import BlackFooter from "./BlackFooter";
 import backgroundImage from "./album/event_background.jpeg";
 import Chatbox from "./Chatbox";
+import Cookies from "js-cookie";
 const Dashboard = () => {
     const [users, setUsers] = useState([]);
     const [page, setPage] = useState(0);
     const [loading, setLoading] = useState(false);
     const [hasMore, setHasMore] = useState(true);
+    const isTokenPresent = Cookies.get('token');
 
     const fetchUsers = useCallback(async () => {
         setLoading(true);
         try {
-            const response = await axios.get(`http://localhost:8085/api/users?offset=${Number(page)}`);
+            const response = await axios.get(`http://localhost:8085/api/users?offset=${Number(page)}`, {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${isTokenPresent}`
+                }
+            });
+
             const newUsers = response.data['content'];
             console.log(newUsers);
             if (newUsers.length > 0) {

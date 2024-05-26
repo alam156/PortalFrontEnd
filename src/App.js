@@ -14,7 +14,6 @@ import SimpleCalendar from "./components/SimpleCalendar";
 import AddEventInCalendarForm from "./components/AddEventInCalendarForm";
 import Feature from "./components/Feature";
 import AddFeatureForm from "./components/AddFeatureForm";
-import EventCard from "./components/EventCard";
 import EventGrid from "./components/EventGrid";
 import ContactPage from "./components/ContactPage";
 import Chatbox from "./components/Chatbox";
@@ -32,6 +31,15 @@ import ChangePasswordPage from "./components/ChangePasswordPage";
 import QuickTour from "./components/quicktour/QuickTour";
 import Portfolio from "./components/portfolio/Portfolio";
 import KeyPairGenerationPage from "./components/KeyPairGenerationPage";
+import FAQParametrized from "./components/FAQParametrized";
+import CommentPage from "./components/commentbox/CommentPage";
+import ServiceDescription1 from "./components/ServiceDescription1";
+import ServiceDescription2 from "./components/ServiceDescription2";
+import Chart from "./components/organogram/chart";
+import NotePad from "./components/notepad/NotePad";
+import FilesList from "./components/FilesList";
+
+
 
 const pageSize = 9;
 const apiKey = '90d07a0194994afb81b25f2807eb4937' ;
@@ -60,12 +68,18 @@ return (
             <Route path = "/file-upload" element={<FileHandler/>}></Route>
             <Route path = "/faq" element={<FAQ/>}></Route>
             <Route path = "/login" element={<LoginPage/>}></Route>
+            <Route path = "/chart" element={<Chart/>}></Route>
             <Route path = "/logout" element={<LogoutPage/>}></Route>
             <Route path = "/change-password" element={<ChangePasswordPage/>}></Route>
             <Route path = "/questions" element={<Questionnaire/>}></Route>
             <Route path = "/cost" element={<CostDashBoard/>}></Route>
             <Route path="/quick-tour" element={<QuickTour/>}></Route>
             <Route path = "/portfolio" element={<Portfolio/>}></Route>
+            <Route path = "/faq1" element={<FAQParametrized/>}></Route>
+            <Route path ="/comments" element={<CommentPage/>}></Route>
+            <Route path ="/notes" element={<NotePad/>}></Route>
+            <Route path ="/service-description-1" element={<ServiceDescription1/>}></Route>
+            <Route path ="/service-description-2" element={<ServiceDescription2/>}></Route>
             <Route path = "/key-pair-generation" element={<KeyPairGenerationPage/>}></Route>
             <Route path="/news" element={<News apiKey={apiKey} key="general" country='in' category='general' pageSize={pageSize} />} />
             <Route path="/business" element={<News apiKey={apiKey} key="business" country='in' category='business' pageSize={pageSize} />} />

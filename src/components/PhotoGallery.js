@@ -48,7 +48,7 @@ const PhotoGallery = () => {
             console.error(error);
         } finally {
         }
-    }, []);
+    }, [isTokenPresent]);
 
     const fetchCategories = useCallback(async () => {
         try {
@@ -65,13 +65,13 @@ const PhotoGallery = () => {
             console.error(error);
         } finally {
         }
-    }, []);
+    }, [isTokenPresent]);
 
     useEffect(() => {
         // Trigger the fetch
-        fetchImages();
         fetchCategories();
-    }, [fetchImages, fetchCategories]);
+        fetchImages();
+    }, [fetchCategories, fetchImages]);
 
     const handleImageClick = (src) => {
         const selectedPhoto = photos.find((photo) => photo.image === src);
@@ -128,8 +128,8 @@ const PhotoGallery = () => {
             {isTokenPresent && (
                 <div className="row justify-content-center">
                     <div className="col-md-2">
-                        <Link to="/upload-event" className="btn btn-secondary">
-                            Add Event
+                        <Link to="/upload-photo" className="btn btn-secondary">
+                            Add Photo
                         </Link>
                     </div>
                 </div>
@@ -157,25 +157,26 @@ const PhotoGallery = () => {
                         ))}
                 </Row>
                 <div className="row">
-                    {photos.map((photo, index) => (
-                        <div key={index} className="col-md-4 col-sm-6 col-12 mb-4">
-                            <div
-                                className="img-container"
-                                style={{ height: '200px', overflow: 'hidden' }}
-                                onClick={() => handleImageClick(photo.image)}
-                            >
-                                <img
-                                    src={photo.image}
-                                    alt=""
-                                    className="img-fluid"
-                                    style={{ width: '100%', height: 'auto' }}
-                                />
-                            </div>
-                            <div className="container description-container">
-                                <p>{photo.caption}</p>
-                            </div>
-                        </div>
-                    ))}
+                            {photos.map((photo, index) => (
+                                <div key={index} className="col-md-4 col-sm-6 col-12 mb-4">
+                                    <div
+                                        className="img-container"
+                                        style={{ height: '200px', overflow: 'hidden' }}
+                                        onClick={() => handleImageClick(photo.image)}
+                                    >
+                                        <img
+                                            src={photo.image}
+                                            alt=""
+                                            className="img-fluid"
+                                            style={{ width: '100%', height: 'auto' }}
+                                        />
+                                    </div>
+                                    <div className="container description-container">
+                                        <p>{photo.caption}</p>
+                                    </div>
+                                </div>
+                            ))}
+
                 </div>
             </div>
             {selectedImage && (

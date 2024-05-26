@@ -7,7 +7,7 @@ const Options = (props) => {
                     return (
                         <div>
                             <div
-                                className="option-item bg-secondary"
+                                className="option-item bg-light"
                                 onClick={option.handler}
                                 key={option.id}
                             >

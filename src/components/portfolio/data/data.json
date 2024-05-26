@@ -66,6 +66,45 @@
       "smallImage": "img/portfolio/09-small.jpg"
     }
   ],
+  "pricing": {
+    "title": "Pricing",
+    "items": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "priceDetails": "for one user",
+        "features": [
+          "1 user",
+          "Basic Support",
+          "1 GB of storage",
+          "Email support"
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": "$15",
+        "priceDetails": "per user",
+
+        "features": [
+          "5 users",
+          "Priority Support",
+          "10 GB of storage",
+          "Phone and Email support"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "price": "$29",
+        "priceDetails": "per user",
+        "features": [
+          "50 users",
+          "24/7 Support",
+          "100 GB of storage",
+          "Phone and Email support"
+        ]
+      }
+    ]
+  },
   "Services": [
     {
       "icon": "fa fa-wordpress",
@@ -181,5 +220,47 @@
       "title": "Non-repudiation",
       "text": "Due to the unique identification features and encryption associated with digital signatures, signees cannot deny their association with a signed document, providing strong legal enforceability."
     }
+  ],
+  "Faq": [
+      {
+        "question": "What is an e-signature?",
+        "answer": "An e-signature is an electronic signature that is used to sign documents digitally. It provides a convenient and secure way to sign documents without the need for physical signatures."
+      },
+      {
+        "question": "Are e-signatures legally binding?",
+        "answer": "Yes, e-signatures are legally binding in many countries and industries. They are recognized as a valid form of signature under various laws and regulations."
+      },
+      {
+        "question": "How do e-signatures improve workflows?",
+        "answer": "E-signatures can help businesses streamline their workflows by reducing the time and effort required to sign documents. They also provide a faster and more efficient signing process, which can improve customer satisfaction."
+      },
+      {
+        "question": "What security features do e-signatures offer?",
+        "answer": "E-signature solutions often include features such as audit trails, authentication, and encryption to ensure the integrity and security of signed documents. These features help prevent fraud and unauthorized access."
+      },
+      {
+        "question": "What are the environmental benefits of e-signatures?",
+        "answer": "E-signatures offer environmental benefits by reducing paper waste and contributing to sustainability efforts. They also help reduce carbon emissions associated with printing, mailing, and storing physical documents."
+      },
+      {
+        "question": "What is an e-signature?",
+        "answer": "An e-signature is an electronic signature that is used to sign documents digitally. It provides a convenient and secure way to sign documents without the need for physical signatures."
+      },
+      {
+        "question": "Are e-signatures legally binding?",
+        "answer": "Yes, e-signatures are legally binding in many countries and industries. They are recognized as a valid form of signature under various laws and regulations."
+      },
+      {
+        "question": "How do e-signatures improve workflows?",
+        "answer": "E-signatures can help businesses streamline their workflows by reducing the time and effort required to sign documents. They also provide a faster and more efficient signing process, which can improve customer satisfaction."
+      },
+      {
+        "question": "What security features do e-signatures offer?",
+        "answer": "E-signature solutions often include features such as audit trails, authentication, and encryption to ensure the integrity and security of signed documents. These features help prevent fraud and unauthorized access."
+      },
+      {
+        "question": "What are the environmental benefits of e-signatures?",
+        "answer": "E-signatures offer environmental benefits by reducing paper waste and contributing to sustainability efforts. They also help reduce carbon emissions associated with printing, mailing, and storing physical documents."
+      }
   ]
 }

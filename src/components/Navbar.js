@@ -8,7 +8,7 @@ import Logo from  './album/logo.png'
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container">
                 <Link className="navbar-brand" to="/"><img
                     src={Logo}
@@ -65,7 +65,7 @@ const Navbar = () => {
                                             <li className="small-text"><Link className="dropdown-item" to="/service2">Why Quicksign is Different?</Link></li>
                                             <li className="small-text"><Link className="dropdown-item" to="/service1">Digital Signature Benifits</Link></li>
                                             <li className="small-text"><Link className="dropdown-item" to="/service2">Who can benefit?</Link></li>
-                                            <li className="small-text"><Link className="dropdown-item" to="/features">E-Sign Documents</Link></li>
+                                            <li className="small-text"><Link className="dropdown-item" to="/features">E-Sign Features</Link></li>
                                         </div>
                                         <div className="col-md-3">
                                             <h2 className="dropdown-header text-dark" style={{cursor: 'pointer'}}>
@@ -87,6 +87,20 @@ const Navbar = () => {
                                             <li className="small-text"><Link className="dropdown-item" to="/key-pair-generation">Key Pair Generation</Link></li>
                                             <li className="small-text"><Link className="dropdown-item" to="/service6">Certificate Creation</Link></li>
                                             <li className="small-text"><Link className="dropdown-item" to="/service5">Signing with Esign</Link></li>
+                                            <li className="small-text"><Link className="dropdown-item" to="/faq">Global FAQ</Link></li>
+                                            <li className="small-text"><Link className="dropdown-item" to="/faq1">Esign FAQ</Link></li>
+                                        </div>
+                                        <div className="col-md-3">
+                                            <h2 className="dropdown-header text-dark" style={{cursor: 'pointer'}}>
+                                                CA Services
+                                                <i className="bi bi-chevron-down ms-2"></i>
+                                            </h2>
+                                            <hr className="dropdown-divider" />
+                                            <li className="small-text"><Link className="dropdown-item" to="/service-description-1">Service 1</Link></li>
+                                            <li className="small-text"><Link className="dropdown-item" to="/service-description-2">Service 2</Link></li>
+                                            <li className="small-text"><Link className="dropdown-item" to="/service5">Signing with Esign</Link></li>
+                                            <li className="small-text"><Link className="dropdown-item" to="/faq">Global FAQ</Link></li>
+                                            <li className="small-text"><Link className="dropdown-item" to="/faq1">Esign FAQ</Link></li>
                                         </div>
                                         <div className="col-md-3">
                                             <h2 className="dropdown-header text-dark" style={{cursor: 'pointer'}}>
@@ -146,6 +160,7 @@ const Navbar = () => {
                                             <li className="small-text"><Link className="dropdown-item " to="/service-news">Latest News</Link></li>
                                             <li className="small-text"><Link className="dropdown-item " to="/news">All news</Link></li>
                                             <li className="small-text"><Link className="dropdown-item" to="/faq">FAQ</Link></li>
+                                            <li className="small-text"><Link className="dropdown-item" to="/notes">Notice Board</Link></li>
                                             {/*<li className="small-text"><Link className="dropdown-item" to="/questions">Questions</Link></li>*/}
                                         </div>
                                     </div>
@@ -156,8 +171,8 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/registration">Registration</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/login">Login</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/logout">Logout Refresh</Link></li>
+                        {/*<li className="nav-item"><Link className="nav-link" to="/login">Login</Link></li>*/}
+                        {/*<li className="nav-item"><Link className="nav-link" to="/logout">Logout Refresh</Link></li>*/}
                     </ul>
                 </div>
             </div>

@@ -101,7 +101,7 @@ const EventGrid = () => {
                 {isTokenPresent && (
                     <div className="row justify-content-center">
                         <div className="col-md-2">
-                            <Link to="/upload-event" className="btn btn-secondary">
+                            <Link to="/file-upload" className="btn btn-secondary">
                                 Add Event
                             </Link>
                         </div>

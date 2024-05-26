@@ -14,6 +14,11 @@ const QuickTour = () => {
             <div className="navbar-fixed">
                 <NavBar />
             </div>
+            <div>
+                <br/>
+                <br/>
+                <br/>
+            </div>
             <div style={{
                 backgroundImage: `url(${backgroundImage})`, height: '40px', display: 'flex', opacity: '0.5',
                 justifyContent: 'center',

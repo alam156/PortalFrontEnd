@@ -24,6 +24,7 @@ const AddPhoto = (props) => {
     const [previewSrc, setPreviewSrc] = useState(''); // state for storing previewImage
     const [caption, setCaption] = useState('');
     const [category, setCategory] = useState('');
+    const isTokenPresent = Cookies.get('token');
     /*const [state, setState] = useState({
         title: '',
         content: '',
@@ -39,7 +40,12 @@ const AddPhoto = (props) => {
         async function fetchData() {
             const token = Cookies.get('token');
             // Fetch data
-            const { data } = await axios.get("http://localhost:8085/api/fetch-category-list");
+            const { data } = await axios.get(`http://localhost:8085/api/fetch-category-list`, {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${isTokenPresent}`
+                }
+            });
             const results = []
             // Store results in the results array
             data.forEach((value) => {

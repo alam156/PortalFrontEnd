@@ -1,0 +1,22 @@
+{
+  "title": "Service About QuickSign",
+  "description": "Description of QuickSign",
+  "data": [
+    {
+      "id": 1,
+      "features": "QuickSign Feature 1",
+      "resources": "QuickSign Resource 1",
+      "price": "$50",
+      "installation": "QuickSign Installation 1",
+      "orderServices": "Order Services 1"
+    },
+    {
+      "id": 2,
+      "features": "QuickSign Feature 2",
+      "resources": "QuickSign Resource 2",
+      "price": "$80",
+      "installation": "QuickSign Installation 2",
+      "orderServices": "Order Services 2"
+    }
+  ]
+}
