@@ -38,6 +38,7 @@ import ServiceDescription2 from "./components/ServiceDescription2";
 import Chart from "./components/organogram/chart";
 import NotePad from "./components/notepad/NotePad";
 import FilesList from "./components/FilesList";
+import FeaturesJumbotron from "./components/FeaturesJumbotron";
 
 
 
@@ -78,6 +79,7 @@ return (
             <Route path = "/faq1" element={<FAQParametrized/>}></Route>
             <Route path ="/comments" element={<CommentPage/>}></Route>
             <Route path ="/notes" element={<NotePad/>}></Route>
+            <Route path ="/jums" element={<FeaturesJumbotron/>}></Route>
             <Route path ="/service-description-1" element={<ServiceDescription1/>}></Route>
             <Route path ="/service-description-2" element={<ServiceDescription2/>}></Route>
             <Route path = "/key-pair-generation" element={<KeyPairGenerationPage/>}></Route>

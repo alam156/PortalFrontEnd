@@ -107,32 +107,32 @@
   },
   "Services": [
     {
-      "icon": "fa fa-wordpress",
+      "icon": "icon1",
       "name": "Registration through e-KYC",
       "text": "We need to register through e-KYC app through face recognition."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
+      "icon": "icon2",
       "name": "Access Through Web Application",
       "text": "We need to access to web application to sign a document."
     },
     {
-      "icon": "fa fa-cloud-download",
+      "icon": "icon3",
       "name": "Upload Document and Sign",
       "text": "We need to upload the document to sign in web application."
     },
     {
-      "icon": "fa fa-language",
+      "icon": "icon4",
       "name": "Select the PlaceHolder",
       "text": "We need to select the place holder where to sign."
     },
     {
-      "icon": "fa fa-plane",
+      "icon": "icon5",
       "name": "Select Approval Hierarchy",
       "text": "Select Approval Hierarchy of members who needs to sign."
     },
     {
-      "icon": "fa fa-pie-chart",
+      "icon": "icon6",
       "name": "Ensuring 2 factor authentication and sign",
       "text": "We need to ensure 2 factor authentication and sign accordingly."
     }

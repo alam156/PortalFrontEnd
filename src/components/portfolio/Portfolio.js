@@ -22,6 +22,9 @@ import SigningSteps from "./components/SigningSteps";
 import CarLogos from "../CarLogos";
 import {Col, Row} from "reactstrap";
 import PricingCard from "../PricingCard";
+import FeaturesJumbotron from "../FeaturesJumbotron";
+import GridItems from "../GridItems";
+import GridCarousel from "./components/GridCarousel";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
     speed: 1000,
@@ -83,7 +86,13 @@ const Portfolio = () => {
                 <NavBar />
             </div>
             <Header data={landingPageData['Header']} />
-            <Features data={landingPageData['Features']} />
+            <div className="container grid-container">
+                <h2 className="mt-4 mb-4">Why Customer choose us?</h2>
+            </div>
+            <div className='row mb-5'>
+                <GridItems />
+            </div>
+            {/*<Features data={landingPageData['Features']} />*/}
             <About data={landingPageData['About']} />
             <Services data={landingPageData['Services']} />
             {/*<Gallery data={landingPageData['Gallery']} />*/}
@@ -114,6 +123,12 @@ const Portfolio = () => {
             </div>
             <div>
                 <div className="section-title text-center">
+                    <h2>Characteristics</h2>
+                </div>
+                <FeaturesJumbotron></FeaturesJumbotron>
+            </div>
+            <div>
+                <div className="section-title text-center">
                     <h2>QuickSign Signing Steps</h2>
                 </div>
                 <SigningSteps></SigningSteps>
@@ -134,6 +149,12 @@ const Portfolio = () => {
             </div>
             <Testimonials data={landingPageData['Testimonials']} />
             <AccordionFAQ data={landingPageData['Faq']}/>
+            <div>
+                <div className="section-title text-center">
+                    <h2>Our Sponsors</h2>
+                </div>
+                <GridCarousel></GridCarousel>
+            </div>
             <div className="section-title text-center">
                 <h2>Our Brands</h2>
             </div>
